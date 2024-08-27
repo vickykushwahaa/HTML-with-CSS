@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Percentage</title>
+    <style>
+        .pre{
+            height: 20px;
+            width: 90%;
+            background-color: bisque;
+            position: relative;
+            border: 2px solid black;
+            border-radius: 15px;
+            left: 4%;
+         }
+          .prograce_bar{
+            height: 100%;
+            background-color: chartreuse;
+            border-radius: 10px;
+            animation: progress 8s ease-in-out 1s 1 alternate ;
+          }
+          @keyframes progress {
+            0%{width: 0%;}
+            80%{width:95%}
+            95%{width:50%}
+            100%{width:100%}
+          }
+    </style>
+</head>
+<body>
+     <div class="pre">
+         <div class="prograce_bar">
+         </div>
+        </div>
+    
+</body>
+</html>
